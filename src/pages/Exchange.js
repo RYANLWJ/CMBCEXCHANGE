@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import axios from 'axios';
 export default class Exchange extends React.Component {
     constructor(props) {
@@ -69,7 +70,9 @@ export default class Exchange extends React.Component {
                 </div>
              </div>
              </div>
+             <Footer/>
              </div>
+             
                 )
              }
 }

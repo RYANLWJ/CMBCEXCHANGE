@@ -5,7 +5,7 @@ import './assets/css/main.css';
 // import TogglePlus from './components/father';
 
 import Exchange from './pages/Exchange';
-
+import Home from './pages/Home';
 import { HashRouter as Router, Route, Link, Redirect, Switch } from "react-router-dom";
 
 // import './index.css';
@@ -23,10 +23,10 @@ ReactDOM.render(
  
         <Router>
             <Switch>
-                {/* <Route exact path="/home" component={Home} /> */}
+                <Route exact path="/home" component={Home} />
                 <Route path="/exchange" component={Exchange} />
                 {/* <Route path="/togg" component={TogglePlus} /> */}
             </Switch>
-            <Redirect to="/exchange" />
+            <Redirect to="/home" />
         </Router>
     , document.getElementById('root'));
